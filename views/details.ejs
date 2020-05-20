@@ -1,0 +1,58 @@
+<%- include layouts/back_header.ejs %>
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Manuales</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Titulo)-->
+        </dt>
+
+        <dd>
+            <!--@Html.DisplayFor(model => model.Titulo)-->
+        </dd>
+
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Contenido)-->
+        </dt>
+
+        <dd>
+            <!--@Html.DisplayFor(model => model.Contenido)-->
+        </dd>
+
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Precio)-->
+        </dt>
+
+        <dd>
+           <!-- @Html.DisplayFor(model => model.Precio)-->
+        </dd>
+
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Imagen)-->
+        </dt>
+
+        <dd>
+            <!--@{
+                string path = Server.MapPath(Model.Imagen);
+                byte[] imageByteData = System.IO.File.ReadAllBytes(path);
+                string imageBase64Data = Convert.ToBase64String(imageByteData);
+                string imageDataURL = string.Format("data:image/png;base64,{0}", imageBase64Data);
+                ViewBag.ImageData = imageDataURL;
+            }-->
+            <img src="" height="200px" width="200px" class="img-fluid" alt="Responsive image">
+
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <!--
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")-->
+</p>
+
+
+<%- include layouts/back_footer.ejs %>

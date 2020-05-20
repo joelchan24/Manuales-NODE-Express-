@@ -1,0 +1,54 @@
+<%- include layouts/back_header.ejs %>
+
+
+<h2>Borrar Manual</h2>
+
+<h3>Esta seguro que quiere borrar esto?</h3>
+<div>
+    <h4>Manuales</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Titulo)-->
+        </dt>
+
+        <dd>
+            <!--@Html.DisplayFor(model => model.Titulo)-->
+        </dd>
+
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Contenido)-->
+        </dt>
+
+        <dd>
+            <!--@Html.DisplayFor(model => model.Contenido)-->
+        </dd>
+
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Precio)-->
+        </dt>
+
+        <dd>
+            <!--@Html.DisplayFor(model => model.Precio)-->
+        </dd>
+
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Imagen)-->
+        </dt>
+
+        <dd>
+            <!--@Html.DisplayFor(model => model.Imagen)-->
+        </dd>
+
+    </dl>
+
+    <form action="">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" />
+            <!--@Html.ActionLink("Back to List", "Index")-->
+        </div>
+    </form>
+</div>
+
+
+<%- include layouts/back_footer.ejs %>
